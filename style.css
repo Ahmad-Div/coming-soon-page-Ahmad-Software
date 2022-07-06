@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@500;600&family=Big+Shoulders+Display:wght@700&family=Bitter&family=Fira+Sans:wght@600&family=Fraunces:opsz,wght@9..144,700&family=Inconsolata:wght@600&family=Inter:wght@400;700&family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Lobster&family=Manrope:wght@500;700&family=Montserrat:wght@500;700&family=Open+Sans:wght@400;700&family=Outfit:wght@400;700&family=Overpass:wght@400;700&family=Poppins:ital,wght@0,100;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@100&family=Rubik:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+    font-weight: 500;
+}
+
+
+header {
+    padding: 3%;
+    display: none;
+    width: 100%;
+    height: fit-content;
+}
+
+
+
+.main-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.content {
+    width: 50%;
+    padding: 5% 10%;
+    min-width: 30rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    flex-direction: column;
+    background-image: 135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%);
+}
+
+.logo-div {
+    width: 100%;
+}
+
+.logo-div img {
+    width: fit-content;
+    transition: 0.7s ease;
+    cursor: pointer;
+}
+
+.logo-div img:hover {
+    transform: scale(1.1);
+}
+
+.texts {
+    width: 100%;
+
+    margin-top: 5%;
+
+}
+
+.texts h1 {
+    width: 100%;
+
+    text-transform: uppercase;
+    margin-bottom: 8%;
+}
+
+.texts p {
+    width: 100%;
+    color: hsl(0, 36%, 70%);
+    margin-top: 0;
+    line-height: 1.4rem;
+}
+
+#special-header {
+    color: hsl(0, 36%, 70%);
+    text-transform: uppercase;
+}
+
+
+#picture {
+    width: 40%;
+    min-width: 30rem;
+}
+
+#picture img {
+    width: 100%;
+}
+
+
+.input {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-self: left;
+    width: 100%;
+    position: relative;
+    opacity: 0.6;
+
+}
+
+.input input {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 20px;
+    border-width: 1;
+    border-color: hsl(0, 93%, 68%);
+    padding: 4%;
+    opacity: 0.6;
+
+}
+
+.input button {
+    position: absolute;
+    right: 0;
+    width: 15%;
+    height: 2.5rem;
+    border-radius: 20px;
+    border-width: 0;
+    transition: 0.7s ease;
+    cursor: pointer;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+.input button:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+/* script  */
+
+
+
+.alert-email-message {
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    height: 100%;
+    top: -120%;
+    opacity: 1;
+    border-radius: 20px;
+    display: none;
+    text-align: center;
+    color: white;
+}
+
+.show-alert {
+    display: block;
+}
+
+@media(max-width:970px) {
+    h1 {
+        font-size: 2.5rem;
+
+    }
+
+    p {
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+        margin-bottom: 10%;
+    }
+
+    .logo-div {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        height: 100%;
+        min-width: 14rem;
+    }
+
+    .input button {
+        height: 100%;
+    }
+
+
+
+    #picture {
+        width: 100%;
+        margin: auto;
+        min-width: 14rem;
+        height: 30rem;
+    }
+
+    #picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        float: left;
+    }
+
+    header {
+        display: block;
+    }
+}
